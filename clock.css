@@ -1,0 +1,52 @@
+body {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100vh; /* Full viewport height */
+    margin: 0; /* Remove default margin */
+    background-color: #222a60; /* Dark background for contrast */
+    font-family: 'Arial', sans-serif; /* Font style */
+}
+
+.clock {
+    text-align: center; /* Center text inside the clock div */
+    padding: 40px; /* Padding for better appearance */
+    border: 2px solid #61dafb; /* Border color */
+    border-radius: 10px; /* Rounded corners */
+    background-color: #7d909f; /* Background color for the clock */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Shadow for depth */
+    transition: background-color 0.3s; /* Smooth transition for background color */
+    animation: fadeIn 1s; /* Fade-in animation */
+}
+
+/* Animation for fade-in effect */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.time {
+    font-size: 60px; /* Large font size for time */
+    color: #61dafb; /* Color for time */
+    letter-spacing: 2px; /* Spacing between letters */
+    transition: transform 0.3s; /* Smooth transition for scaling */
+}
+
+.time:hover {
+    transform: scale(1.1); /* Scale effect on hover */
+}
+
+.separator {
+    font-size: 60px; /* Same size as time */
+    color: #ffffff; /* Color for separator */
+}
+
+/* Change background color on mouseover */
+.clock:hover {
+    background-color: #98b78c; /* Change to your desired hover color */
+}
+
